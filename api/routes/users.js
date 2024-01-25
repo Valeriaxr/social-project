@@ -6,5 +6,9 @@ const router = express.Router()
 
 router.get("/find/:userId", getUser)
 
+router.get("/test",(req,res)=>{
+    res.send("it works!")
+});
+
 
 export default router;
